@@ -7,11 +7,39 @@
     <title>Zaya Modas</title>
 </head>
 <body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mx-auto">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-auto">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item mx-auto">
+                <a class="nav-link" href="#jaquetas">Jaquetas</a>
+              </li>
+              <li class="nav-item mx-auto">
+                <a class="nav-link" href="#blazers">Blazers</a>
+              </li>
+              <li class="nav-item mx-auto">
+                <a class="nav-link" href="#sobretudos">Sobretudos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <section class="container my-4">
         <!-- Início seção de jaquetas -->
         <div class="row g-4">
             <div class="col-12 my-3">
-                <h1 class="text-secondary fw-bold">JAQUETA</h1>
+                <h1 class="text-secondary fw-bold" id="jaquetas">JAQUETA</h1>
             </div>
             <!-- Item 1 -->
             <div class="col-6 col-md-3">
@@ -81,7 +109,7 @@
         <!-- Início seção de blazers -->
         <div class="row g-4 my-4">
             <div class="col-12 my-3">
-                <h1 class="text-secondary fw-bold">BLAZER</h1>
+                <h1 class="text-secondary fw-bold" id="blazers">BLAZER</h1>
             </div>
             <!-- Item 1 -->
             <div class="col-6 col-md-3">
@@ -151,7 +179,7 @@
         <!-- Início seção de sobretudos -->
         <div class="row g-4 my-4">
             <div class="col-12 my-3">
-                <h1 class="text-secondary fw-bold">SOBRETUDO</h1>
+                <h1 class="text-secondary fw-bold" id="sobretudos">SOBRETUDO</h1>
             </div>
             <!-- Item 1 -->
             <div class="col-6 col-md-3">
@@ -218,5 +246,7 @@
         </div>
         <!-- Fim seção de sobretudos -->
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
