@@ -12,31 +12,31 @@
         <form class="row g-3">
             <h1>Cadastre-se</h1>
             <div class="col-md-12">
-                <label class="form-label">Nome Completo</label>
+                <label class="form-label" for="nome">Nome Completo</label>
                 <input type="name" name="nome" id="nome" class="form-control" placeholder="Nome" required>
             </div>
             <div class="col-md-6">
-              <label class="form-label">Email</label>
+              <label class="form-label" for="email">Email</label>
               <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
             </div>
             <div class="col-md-6">
-              <label class="form-label">Senha</label>
+              <label class="form-label" for="senha">Senha</label>
               <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" required>
             </div>
             <div class="col-md-2">
-                <label class="form-label">CEP</label>
+                <label class="form-label" for="cep">CEP</label>
                 <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" required>
               </div>
             <div class="col-12">
-              <label class="form-label">Endereço</label>
+              <label class="form-label" for="endereco">Endereço</label>
               <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Endereço" required>
             </div>
             <div class="col-md-6">
-              <label class="form-label">Cidade</label>
+              <label class="form-label" for="cidade">Cidade</label>
               <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade" required>
             </div>
             <div class="col-md-4">
-              <label class="form-label">Estado</label>
+              <label class="form-label" for="estado">Estado</label>
               <input type="text" name="estado" id="estado" class="form-control" placeholder="Estado" required>
             </div>
             <div class="col-12">
