@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container my-5 base-cadastro">
-        <form class="row g-3">
+        <form class="row g-3" action="cadastro.php" method="POST">
             <h1>Cadastre-se</h1>
             <div class="col-md-12">
                 <label class="form-label" for="nome">Nome Completo</label>
