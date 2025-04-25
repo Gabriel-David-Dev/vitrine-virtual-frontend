@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.base-cadastro {
+    background-color: lightblue;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    margin-top: auto;
+}
+
+.botao-base {
+    color:white;
+    text-decoration: none;
+}
