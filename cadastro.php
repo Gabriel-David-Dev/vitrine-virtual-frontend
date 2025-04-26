@@ -16,6 +16,11 @@
         "INSERT INTO usuarios(nome_usuario,email_usuario,senha_usuario,cep_usuario,endereco_usuario,cidade_usuario,estado_usuario)
         VALUES ('$nome','$email','$senha','$cep','$endereco','$cidade','$estado')"
       );
+
+      if ($result) {
+        header('Location: login.php');
+      }
+      
     }
 
 ?>
