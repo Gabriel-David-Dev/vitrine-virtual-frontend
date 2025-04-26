@@ -1,3 +1,26 @@
+<?php
+
+    include_once('../Backend/config-db.php');
+
+    if(isset($_POST['cadastrar'])) {
+      $nome = $_POST['nome'];
+      $email = $_POST['email'];
+      $senha = $_POST['senha'];
+      $cep = $_POST['cep'];
+      $endereco = $_POST['endereco'];
+      $cidade = $_POST['cidade'];
+      $estado = $_POST['estado'];
+
+      $result = mysqli_query(
+        $conexao, 
+        "INSERT INTO usuarios(nome_usuario,email_usuario,senha_usuario,cep_usuario,endereco_usuario,cidade_usuario,estado_usuario)
+        VALUES ('$nome','$email','$senha','$cep','$endereco','$cidade','$estado')"
+      );
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
