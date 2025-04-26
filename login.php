@@ -1,3 +1,10 @@
+<?php
+$erro = false;
+if (isset($_GET['erro'])) {
+    $erro = true;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,6 +15,10 @@
     <title>Login - Zaya Modas</title>
 </head>
 <body>
+    <?php if ($erro): ?>
+        <p style="color: red; text-align: center; margin-top: 10%; font-weight: bolder;">Usuário ou senha inválidos!</p>
+    <?php endif; ?>
+
     <div class="container my-5 base-login">
         <form action="../Backend/verifica-login.php" method="POST">
             <h1>Login</h1>
