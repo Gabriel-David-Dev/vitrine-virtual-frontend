@@ -64,7 +64,7 @@
             </div>
             <div class="col-12">
               <button type="submit" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
-              <a href="login.html" class="btn btn-danger botao-base">Voltar</a>
+              <a href="login.php" class="btn btn-danger botao-base">Voltar</a>
             </div>
           </form>
     </div>
