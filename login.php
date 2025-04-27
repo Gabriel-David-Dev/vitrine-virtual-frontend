@@ -1,8 +1,13 @@
 <?php
-$erro = false;
-if (isset($_GET['erro'])) {
-    $erro = true;
-}
+
+  session_start();
+
+  $erro = false;
+
+  if (isset($_GET['erro'])) {
+      $erro = true;
+  }
+
 ?>
 
 <!DOCTYPE html>
