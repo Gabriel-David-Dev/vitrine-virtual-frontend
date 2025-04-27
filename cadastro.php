@@ -1,6 +1,33 @@
 <?php
 
     include_once('../Backend/config-db.php');
+    include_once('../Backend/viacep-api.php');
+
+    $nome = $_POST['nome'] ?? "";
+    $email = $_POST['email'] ?? "";
+    $senha = $_POST['senha'] ?? "";
+    $cep = $_POST['cep'] ?? "";
+    $endereco = $_POST['endereco'] ?? "";
+    $cidade = $_POST['cidade'] ?? "";
+    $estado = $_POST['estado'] ?? "";
+
+    if(isset($_POST['buscar_cep'])) {
+      $cepDigitado = $_POST['cep'];
+      $dadosEndereco = buscarEndereco($cepDigitado);
+
+      if ($dadosEndereco === 'cep_invalido') {
+          echo "<script>alert('CEP inválido.');</script>";
+      } elseif (isset($dadosEndereco->erro)) {
+          echo "<script>alert('CEP não encontrado.');</script>";
+      } elseif ($dadosEndereco) {
+          $endereco = $dadosEndereco->logradouro;
+          $cidade = $dadosEndereco->localidade;
+          $estado = $dadosEndereco->uf;
+          $cep = $cepDigitado;
+      } else {
+          echo "<script>alert('Erro ao conectar com a API do ViaCEP.');</script>";
+      }
+    }
 
     if(isset($_POST['cadastrar'])) {
       $nome = $_POST['nome'];
@@ -54,6 +81,7 @@
             <div class="col-md-2">
                 <label class="form-label" for="cep">CEP</label>
                 <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" required>
+                <button type="submit" name="buscar_cep" class="btn btn-outline-secondary">Buscar</button>
               </div>
             <div class="col-12">
               <label class="form-label" for="endereco">Endereço</label>
