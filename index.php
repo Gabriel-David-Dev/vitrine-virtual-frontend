@@ -27,6 +27,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item mx-auto">
+                <?php if (!empty($_SESSION['logado'])): ?>
+                    <?php
+                        echo "<p class='nav-link' id='usuario-logado'>Olá, $logado</p>"; 
+                    ?> 
+                <?php endif; ?>
+              </li>
+              <li class="nav-item mx-auto">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-auto">
