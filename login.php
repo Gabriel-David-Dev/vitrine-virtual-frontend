@@ -42,7 +42,7 @@
             <div class="d-flex justify-content-center gap-3" >
                 <button type="submit" name="entrar" id="entrar" class="btn btn-primary">Entrar</button>
                 <a href="cadastro.php" class="btn btn-success" classe="botao-base">Cadastrar</a>
-                <a href="index.html" class="btn btn-danger" classe="botao-base">Voltar</a>
+                <a href="index.php" class="btn btn-danger" classe="botao-base">Voltar</a>
             </div>
         </form>
     </div>
