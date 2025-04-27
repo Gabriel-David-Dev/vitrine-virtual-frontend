@@ -30,7 +30,7 @@
               <li class="nav-item mx-auto">
                 <?php if (!empty($_SESSION['logado'])): ?>
                     <?php
-                        echo "<p class='nav-link' id='usuario-logado'>Olá, $logado</p>"; 
+                        echo "<p class='nav-link' id='usuario-logado'>Logado como: $logado</p>"; 
                     ?> 
                 <?php endif; ?>
               </li>
