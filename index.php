@@ -30,7 +30,9 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-auto">
-                <a class="nav-link" href="login.php">Login</a>
+                <?php if (empty($_SESSION['logado'])): ?>
+                    <a class="nav-link" href="login.php">Login</a>
+                <?php endif; ?>
               </li>
               <li class="nav-item mx-auto">
                 <a class="nav-link" href="#jaquetas">Jaquetas</a>
@@ -40,6 +42,11 @@
               </li>
               <li class="nav-item mx-auto">
                 <a class="nav-link" href="#sobretudos">Sobretudos</a>
+              </li>
+              <li class="nav-item mx-auto">
+                <?php if (!empty($_SESSION['logado'])): ?>
+                    <a class="btn btn-danger" href="../Backend/sair.php">Sair</a> 
+                <?php endif; ?>
               </li>
             </ul>
           </div>
