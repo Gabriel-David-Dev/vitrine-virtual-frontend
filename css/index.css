@@ -1,0 +1,8 @@
+#usuario-logado {
+    color: #4169E1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    margin: 0 !important;
+}
