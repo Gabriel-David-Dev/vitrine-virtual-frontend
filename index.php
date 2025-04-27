@@ -4,7 +4,7 @@
         session_unset();
     }
     else {
-        $logado = $_SESSION['nome'];
+        $logado = $_SESSION['email'];
     }
 
 ?>
