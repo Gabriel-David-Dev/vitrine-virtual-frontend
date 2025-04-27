@@ -63,37 +63,96 @@
     <title>Cadastro - Zaya Modas</title>
 </head>
 <body>
-    <div class="container my-5 base-cadastro">
+<div class="container my-5 base-cadastro">
         <form class="row g-3" action="cadastro.php" method="POST">
             <h1>Cadastre-se</h1>
             <div class="col-md-12">
                 <label class="form-label" for="nome">Nome Completo</label>
-                <input type="name" name="nome" id="nome" class="form-control" placeholder="Nome" required>
+                <input 
+                  type="name"
+                  name="nome"
+                  id="nome"
+                  class="form-control"
+                  placeholder="Nome"
+                  value="<?php echo $nome; ?>"
+                  required
+                >
             </div>
             <div class="col-md-6">
               <label class="form-label" for="email">Email</label>
-              <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                class="form-control" 
+                placeholder="Email"
+                value="<?php echo $email; ?>" 
+                required
+              >
             </div>
             <div class="col-md-6">
               <label class="form-label" for="senha">Senha</label>
-              <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" required>
+              <input 
+                type="password" 
+                name="senha" 
+                id="senha" 
+                class="form-control" 
+                placeholder="Senha" 
+                value="<?php echo $senha; ?>" 
+                required
+              >
             </div>
             <div class="col-md-2">
-                <label class="form-label" for="cep">CEP</label>
-                <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" required>
-                <button type="submit" name="buscar_cep" class="btn btn-outline-secondary">Buscar</button>
-              </div>
+              <label class="form-label" for="cep">CEP</label>
+              <input 
+                type="text" 
+                name="cep" 
+                id="cep" 
+                class="form-control" 
+                placeholder="CEP"
+                value="<?php echo $cep; ?>"  
+                required
+              >
+              <button type="submit" name="buscar_cep" class="btn btn-warning my-1">Buscar CEP</button>
+            </div>
             <div class="col-12">
               <label class="form-label" for="endereco">Endereço</label>
-              <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Endereço" required>
+              <input 
+                type="text" 
+                name="endereco" 
+                id="endereco" 
+                class="form-control" 
+                placeholder="Endereço" 
+                value="<?php echo $endereco; ?>" 
+                required
+                readonly
+              >
             </div>
             <div class="col-md-6">
               <label class="form-label" for="cidade">Cidade</label>
-              <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade" required>
+              <input 
+                type="text" 
+                name="cidade" 
+                id="cidade" 
+                class="form-control" 
+                placeholder="Cidade" 
+                value="<?php echo $cidade; ?>" 
+                required 
+                readonly
+              >
             </div>
             <div class="col-md-4">
               <label class="form-label" for="estado">Estado</label>
-              <input type="text" name="estado" id="estado" class="form-control" placeholder="Estado" required>
+              <input 
+                type="text" 
+                name="estado" 
+                id="estado" 
+                class="form-control" 
+                placeholder="Estado" 
+                value="<?php echo $estado; ?>" 
+                required 
+                readonly
+              >
             </div>
             <div class="col-12">
               <button type="submit" name="cadastrar" id="cadastrar" class="btn btn-success">Cadastrar</button>
