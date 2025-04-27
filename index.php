@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['email']) == true and (!isset($_SESSION['senha']) == true)) {
+        session_unset();
+    }
+    else {
+        $logado = $_SESSION['nome'];
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
