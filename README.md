@@ -46,7 +46,11 @@ git clone https://github.com/Gabriel-David-Dev/vitrine-virtual-backend.git backe
     * Abra o XAMPP e inicie o Apache.
     * No navegador, abra:
         ```
-        http://localhost/pasta-criada/index.php
+        http://localhost/pasta-criada/frontend/index.php
+        ```
+    * Ou então:
+        ```
+        http://localhost:8080/pasta-criada/frontend/index.php
         ```
         
 ## ⚙️ Configurações Adicionais
