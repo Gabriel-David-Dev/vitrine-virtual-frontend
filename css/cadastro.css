@@ -9,11 +9,6 @@ body {
     background-color: lightblue;
     border: 2px solid lightblue;
     border-radius: 10px;
-    padding: 20px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 footer {

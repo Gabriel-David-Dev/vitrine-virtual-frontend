@@ -63,7 +63,7 @@
     <title>Cadastro - Zaya Modas</title>
 </head>
 <body>
-<div class="container my-5 base-cadastro">
+<div class="container my-5 base-cadastro d-flex justify-content-cent align-items-start p-3">
         <form class="row g-3" action="cadastro.php" method="POST">
             <h1>Cadastre-se</h1>
             <div class="col-md-12">
